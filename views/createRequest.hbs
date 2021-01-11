@@ -1,0 +1,52 @@
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-wrapper-before"></div>
+        <div class="content-header row">
+            <div class="content-header-left col-md-4 col-12 mb-2">
+                <h3 class="content-header-title">Generate New Request</h3>
+            </div>
+        </div>
+        <div class="content-body">
+
+                <section class="textarea-select">
+                    <form id="AddForm" action="/generate-request" method="post"></form>
+                    <!-- Textarea start -->
+                    <div class="row match-height">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card">
+
+                                <div class="card-block">
+                                    <div class="card-body">
+                                        <fieldset class="form-group">
+                                            <input class="form-control" name="routeToRender" value="{{route}}"
+                                                   style="display: none" form="AddForm">
+                                        </fieldset>
+
+                                        <h5 class="mt-2">Vendor Name</h5>
+                                        <fieldset class="form-group">
+                                            <input class="form-control" name="vendorName"
+                                                      form="AddForm" />
+                                        </fieldset>
+
+                                        <h5 class="mt-2">Description</h5>
+                                        <fieldset class="form-group">
+                                            <textarea class="form-control" name="description" rows="10"
+                                                      form="AddForm"></textarea>
+                                        </fieldset>
+
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-min-width mr-1 mb-1"
+                                            style="float: right" form="AddForm">Generate
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+        </div>
+    </div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////-->

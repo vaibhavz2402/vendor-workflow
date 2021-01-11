@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "5fe38d0c8e17f61ec8c68232"
+  },
+  "workID": "5fe38c45b552912b5cd51b85",
+  "userID": "5fe386d12e40240bcc016fad",
+  "marked": 0,
+  "createdAt": "2020-12-24",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe38d178e17f61ec8c68233"
+  },
+  "workID": "5fe38c45b552912b5cd51b85",
+  "userID": "5fe386d12e40240bcc016fad",
+  "marked": 0,
+  "createdAt": "2020-12-24",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe38db8a8b0112298f0ad11"
+  },
+  "workID": "5fe38c45b552912b5cd51b85",
+  "userID": "5fe3873b88dba81ec8157bd6",
+  "marked": 1,
+  "createdAt": "2020-12-24",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe38ecf457c241db86728df"
+  },
+  "workID": "5fe38c45b552912b5cd51b85",
+  "userID": "5fe388944a591e38dcfd101b",
+  "marked": 0,
+  "createdAt": "2020-12-24",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe38f0fd28726381c9c0fcf"
+  },
+  "workID": "5fe38c45b552912b5cd51b85",
+  "userID": "5fe388944a591e38dcfd101b",
+  "marked": 0,
+  "createdAt": "2020-12-24",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe38f9ada5945210c0cb2d0"
+  },
+  "workID": "5fe38c45b552912b5cd51b85",
+  "userID": "5fe388cac434a21048f8695a",
+  "marked": 0,
+  "createdAt": "2020-12-24",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe3913c678acf09dcd94d9f"
+  },
+  "workID": "5fe38c45b552912b5cd51b85",
+  "userID": "5fe387f45d756125dc64a8d9",
+  "marked": 2,
+  "createdAt": "2020-12-24",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe392fd24ed2326ac724ce6"
+  },
+  "workID": "5fe3929e10772e03141e6c02",
+  "userID": "5fe386d12e40240bcc016fad",
+  "marked": 2,
+  "createdAt": "2020-12-24",
+  "__v": 0
+}]

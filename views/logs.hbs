@@ -1,0 +1,22 @@
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-wrapper-before"></div>
+        <div class="content-header row">
+            <div class="content-header-left col-md-4 col-12 mb-2">
+                <h3 class="content-header-title">Logs </h3>
+            </div>
+        </div>
+        <div class="content-body">
+            <ul style="margin-top: 100px">
+                {{#each data}}
+                <li>{{this.name}} marked <b>
+                    {{#when this.marked 'eq' 0}} approved {{/when}}
+                    {{#when this.marked 'eq' 1}} reject & remove {{/when}}
+                    {{#when this.marked 'eq' 2}} rejected {{/when}}
+                </b> on {{this.vendorName}}'s request.
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

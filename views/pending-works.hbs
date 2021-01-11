@@ -1,0 +1,63 @@
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-wrapper-before"></div>
+        <div class="content-header row">
+            <div class="content-header-left col-md-4 col-12 mb-2">
+                <h3 class="content-header-title">Pending Works</h3>
+
+            </div>
+
+        </div>
+        <div class="content-body">
+
+            '{{#each data}}
+                <section class="textarea-select">
+                     <!-- Textarea start -->
+                    <form action="/user-action" method="post" id="ApprovalForm-{{this.id}}"></form>
+                    <div class="row match-height">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title"> Work </h4>
+                                </div>
+
+                                <div class="card-block">
+                                    <div class="card-body">
+                                        <h5 class="abc-05" style="margin-top: 0.5rem !important;">
+                                            <button type="button"
+                                                    class="btn btn-light btn-min-width mr-1 mb-1">{{this.vendorName}}</button>
+                                            <button type="button"
+                                                    class="btn btn-light btn-min-width mr-1 mb-1">{{this.createdAt}}</button>
+
+                                        </h5>
+
+                                        <h5 class="mt-2">Description</h5>
+                                        {{this.description}}
+
+                                        <input name="workID" value="{{this.id}}" form="ApprovalForm-{{this.id}}" style="display: none">
+
+                                        <h5 class="mt-2">Action </h5>
+                                        <select name="action" id="decision" form="ApprovalForm-{{this.id}}">
+                                            <option value="0">Approved</option>
+                                            <option value="1">Reject & Remove</option>
+                                            <option value="2">Reject</option>
+                                        </select>
+
+                                        <button type="submit" class="btn btn-primary btn-min-width mr-1 mb-1"
+                                                style="float: right" form="ApprovalForm-{{this.id}}">Save
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    </form>
+                </section>
+{{/each}}
+        </div>
+    </div>
+</div>

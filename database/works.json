@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "5fe38c45b552912b5cd51b85"
+  },
+  "approval1": 1,
+  "approval2": 1,
+  "vendorName": "Vendor 1 ",
+  "description": "Made a request 1 for any ceratin task 1",
+  "createdAt": "2020-12-23",
+  "status": 1,
+  "__v": 0,
+  "flag": 4
+},{
+  "_id": {
+    "$oid": "5fe3929e10772e03141e6c02"
+  },
+  "flag": 4,
+  "approval1": 0,
+  "approval2": 0,
+  "vendorName": "Vendor 2",
+  "description": "This is a testing description for vendor 2",
+  "createdAt": "2020-12-24",
+  "status": 1,
+  "__v": 0
+}]

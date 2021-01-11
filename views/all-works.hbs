@@ -1,0 +1,63 @@
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-wrapper-before"></div>
+        <div class="content-header row">
+            <div class="content-header-left col-md-4 col-12 mb-2">
+                <h3 class="content-header-title">All Works </h3>
+            </div>
+
+        </div>
+        <div class="content-body">
+            {{#each data}}
+                <section class="textarea-select">
+                     <!-- Textarea start -->
+                    <div class="row match-height">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title"> Work </h4>
+
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-body">
+                                        <h5 class="abc-05" style="margin-top: 0.5rem !important;">
+                                            <button type="button"
+                                                    class="btn btn-light btn-min-width mr-1 mb-1">Name : {{this.vendorName}}</button>
+                                            <button type="button"
+                                                    class="btn btn-light btn-min-width mr-1 mb-1">Created on : {{this.createdAt}}</button>
+                                            {{#when this.status 'eq' 0}}
+                                            <button type="button" class="btn btn-primary btn-min-width mr-1 mb-1"
+                                                    style="float: right">Pending
+                                            </button>
+                                            {{/when}}
+                                            {{#when this.status 'eq' 1}}
+                                                <button type="button" class="btn btn-primary btn-min-width mr-1 mb-1"
+                                                        style="float: right">Terminated
+                                                </button>
+                                            {{/when}}
+                                            {{#when this.status 'eq' 2}}
+                                                <button type="button" class="btn btn-primary btn-min-width mr-1 mb-1"
+                                                        style="float: right">Approved
+                                                </button>
+                                            {{/when}}
+
+
+                                        </h5>
+
+                                        <h5 class="mt-2">Description</h5>
+                                        {{this.description}}
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            {{/each}}
+        </div>
+    </div>
+</div>
